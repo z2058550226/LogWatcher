@@ -39,6 +39,10 @@ public class LogTools {
 
     public static void i(String log) {
         Log.e(TAG, log);
+        if (sLogPostman == null) {
+            Log.e(TAG, "The DebugTool is not installed.");
+            return;
+        }
         try {
             sLogPostman.onSendLog(log);
         } catch (RemoteException e) {
