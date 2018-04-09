@@ -10,7 +10,6 @@ import android.util.Log;
 
 /**
  * @author zjy
- * @date 2018/1/31
  */
 
 public class LogTools {
